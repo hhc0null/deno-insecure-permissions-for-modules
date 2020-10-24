@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  victim:
+    build:
+      context: ./victim
+      args:
+        deno_std_version: 0.74.0
+        deno_version: 1.4.6
+    command: [ "sh", "-c", "while `sleep 1`; do welcome; done" ]
+    user: root
+    init: true
