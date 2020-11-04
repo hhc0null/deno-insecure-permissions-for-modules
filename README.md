@@ -60,7 +60,7 @@ As shown above, the permission of the cache is set to world-writable at [[ 1 ]].
     }
     ```
 
-## Exploitation
+## Demonstration
 
 There is a service that executes [welcome module](https://deno.land/std@0.74.0/examples/welcome.ts) in std@0.74.0 forever. We can reproduce the issue with the following instructions.
 
